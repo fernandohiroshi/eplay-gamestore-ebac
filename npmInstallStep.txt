@@ -1,0 +1,7 @@
+### npm installations setup ###
+
+npm i --save styled-components react-router-dom
+
+# for prettier error:
+npx eslint --fix .
+
