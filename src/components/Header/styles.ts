@@ -18,6 +18,7 @@ export const HeaderBar = styled.header`
   a {
     color: ${colors.white};
     font-weight: bold;
+    text-decoration: none;
   }
 `
 

@@ -1,13 +1,23 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Header from './components/Header'
-import { GlobalCss, Container } from './styles'
+import Hero from './components/Hero'
+import { GlobalCss } from './styles'
+
+const routes = createBrowserRouter([
+  {
+    path: '/',
+    element: <Hero />
+  }
+])
 
 function App() {
   return (
     <>
       <GlobalCss />
-      <Container>
+      <div className="container">
         <Header />
-      </Container>
+      </div>
+      <RouterProvider router={routes} />
     </>
   )
 }
