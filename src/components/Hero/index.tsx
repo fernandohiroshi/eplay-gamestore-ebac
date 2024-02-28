@@ -1,23 +1,31 @@
-import { HeroBox, Title, Price } from './styles'
-import heroImg from '../../assets/images/spider_man.png'
-import Tag from '../Tag'
+import bannerImg from '../../assets/images/fundo_hogwarts.png'
 import Button from '../Button'
+import Tag from '../Tag'
+import { Banner, Infos } from './styles'
 
 const Hero = () => (
-  <HeroBox style={{ backgroundImage: `url(${heroImg})` }}>
+  <Banner style={{ backgroundImage: `url(${bannerImg})` }}>
     <div className="container">
-      <Tag size="big">Top Pick Today</Tag>
       <div>
-        <Title>Marvel&apos;s Spider-Man: Miles Morales PS4 & PS5</Title>
-        <Price>
-          From <span>$50.00</span> <br /> for only $19.98
-        </Price>
+        <Tag>RPG</Tag>
+        <Tag>PS5</Tag>
       </div>
-      <Button type="link" to="/product" title="Click to view offer">
-        To enjoy
-      </Button>
+      <Infos>
+        <h2>Hogwarts Legacy</h2>
+        <p>
+          <span> From $50.00</span>
+          For just $19.00
+        </p>
+        <Button
+          type="button"
+          title="Click here to add this game to the cart"
+          variant="primary"
+        >
+          Add to cart
+        </Button>
+      </Infos>
     </div>
-  </HeroBox>
+  </Banner>
 )
 
 export default Hero

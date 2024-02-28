@@ -1,4 +1,4 @@
-import Hero from '../../components/Hero'
+import Banner from '../../components/Banner'
 import ProductList from '../../components/ProductList'
 import Game from '../../models/Game'
 
@@ -95,7 +95,7 @@ const comingSoon: Game[] = [
 
 const Home = () => (
   <>
-    <Hero />
+    <Banner />
     <ProductList games={promotions} title="Promotions" background="gray" />
     <ProductList games={comingSoon} title="Coming Soon" background="black" />
   </>
