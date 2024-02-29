@@ -30,7 +30,11 @@ const Banner = () => {
             {priceFormat(game.prices.current)}
           </Price>
         </div>
-        <Button type="link" to="/product" title="Click to view offer">
+        <Button
+          type="link"
+          to={`/product/${game.id}`}
+          title="Click to view offer"
+        >
           To enjoy
         </Button>
       </div>
