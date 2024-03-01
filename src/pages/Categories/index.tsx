@@ -1,10 +1,4 @@
 import ProductList from '../../components/ProductList'
-import residentEvil from '../../assets/images/resident.png'
-import diablo from '../../assets/images/diablo.png'
-import zelda from '../../assets/images/zelda.png'
-import starWars from '../../assets/images/star_wars.png'
-import { Game } from '../Home'
-import { useEffect, useState } from 'react'
 import {
   useGetActionGamesQuery,
   useGetSportGamesQuery,

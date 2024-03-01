@@ -1,9 +1,6 @@
-import { useEffect, useState } from 'react'
 import { BannerBox, Title, Price } from './styles'
-import heroImg from '../../assets/images/spider_man.png'
 import Tag from '../Tag'
 import Button from '../Button'
-import { Game } from '../../pages/Home'
 import { priceFormat } from '../ProductList'
 import { useGetFeaturedGameQuery } from '../../services/api'
 
@@ -13,7 +10,7 @@ const Banner = () => {
   if (!game) {
     return <h3>Loading...</h3>
   }
-  // 24:24
+
   return (
     <BannerBox style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">

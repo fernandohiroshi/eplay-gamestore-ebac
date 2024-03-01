@@ -19,7 +19,7 @@ const api = createApi({
       query: () => 'acao'
     }),
     getSportGames: builder.query<Game[], void>({
-      query: () => 'esporte'
+      query: () => 'esportes'
     }),
     getSimulationGames: builder.query<Game[], void>({
       query: () => 'simulacao'
