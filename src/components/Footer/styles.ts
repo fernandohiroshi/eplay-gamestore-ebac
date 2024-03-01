@@ -18,7 +18,7 @@ export const Links = styled.ul`
 `
 export const Link = styled.a`
   color: ${colors.white};
-  opacity: 0.5;
+  opacity: 0.7;
   text-decoration: none;
   margin-right: 8px;
 `
