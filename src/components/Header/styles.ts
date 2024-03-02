@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const HeaderBar = styled.header`
   background-color: ${colors.gray};
@@ -19,6 +19,10 @@ export const HeaderBar = styled.header`
     color: ${colors.white};
     font-weight: bold;
     text-decoration: none;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: none;
   }
 `
 

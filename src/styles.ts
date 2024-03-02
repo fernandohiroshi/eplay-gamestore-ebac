@@ -8,6 +8,11 @@ export const colors = {
   borderColor: '#aaa'
 }
 
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
+}
+
 export const GlobalCss = createGlobalStyle`
 *{
   box-sizing: border-box;
@@ -27,5 +32,9 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+
+@media (max-width: ${breakpoints.desktop}) {
+  max-width: 80%;
+}
 }
 `

@@ -22,7 +22,7 @@ const Product = ({
 }: Props) => {
   const getDescription = (description: string) => {
     if (description.length > 95) {
-      return description.slice(0, 92) + '...'
+      return description.slice(0, 100) + '...'
     }
     return description
   }
