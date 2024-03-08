@@ -1,29 +1,27 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
-type InputGroupProps = {
-  maxWidth?: string
+type InputBoxProps = {
+  maxw?: string
 }
-
 type RowProps = {
-  marginTop?: string
+  mtop?: string
 }
-
-type TabButtonProps = {
-  isActive: boolean
+type PayButtonProps = {
+  isactive: boolean
 }
 
 export const Row = styled.div<RowProps>`
   display: flex;
   column-gap: 24px;
-  margin-top: ${(props) => props.marginTop || '0'};
+  margin-top: ${(props) => props.mtop || '0'};
   align-items: flex-end;
 `
 
-export const InputGroup = styled.div<InputGroupProps>`
+export const InputBox = styled.div<InputBoxProps>`
   flex: auto;
 
-  max-width: ${(props) => props.maxWidth || 'auto'};
+  max-width: ${(props) => props.maxw || 'auto'};
 
   label {
     font-size: 14px;
@@ -40,14 +38,14 @@ export const InputGroup = styled.div<InputGroupProps>`
     width: 100%;
   }
 `
-export const TabButton = styled.button<TabButtonProps>`
+export const PayButton = styled.button<PayButtonProps>`
   border-radius: 8px;
+  border: none;
   font-size: 14px;
   font-weight: bold;
   color: ${colors.white};
-  background-color: ${(props) => (props.isActive ? colors.blue : colors.black)};
+  background-color: ${(props) => (props.isactive ? colors.blue : colors.black)};
   height: 32px;
-  border: none;
   margin-right: 16px;
   padding: 0 8px;
   cursor: pointer;

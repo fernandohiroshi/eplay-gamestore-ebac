@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin-bottom: 24px;
   }
 
-  .margin-top {
+  .m-top {
     margin-top: 24px;
   }
 
