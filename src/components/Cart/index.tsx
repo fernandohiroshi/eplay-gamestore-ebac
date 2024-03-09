@@ -2,19 +2,12 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import Tag from '../Tag'
 import Button from '../Button'
+import { parseToBRL } from '../../utils'
 
-import { priceFormat } from '../ProductList'
 import { RootReducer } from '../../store'
 import { close, remove } from '../../store/reducers/cart'
 
-import {
-  CartContainer,
-  Overlay,
-  SideBar,
-  Prices,
-  Quantity,
-  CartItem
-} from './styles'
+import * as S from './styles'
 
 const Cart = () => {
   const { isOpen, items } = useSelector((state: RootReducer) => state.cart)
@@ -36,32 +29,32 @@ const Cart = () => {
   }
 
   return (
-    <CartContainer className={isOpen ? 'is-open' : ''}>
-      <Overlay onClick={closeCart} />
-      <SideBar>
+    <S.CartContainer className={isOpen ? 'is-open' : ''}>
+      <S.Overlay onClick={closeCart} />
+      <S.SideBar>
         <ul>
           {items.map((item) => (
-            <CartItem key={item.id}>
+            <S.CartItem key={item.id}>
               <img src={item.media.thumbnail} alt={item.name} />
               <div>
                 <h3>{item.name}</h3>
                 <Tag>{item.details.category}</Tag>
                 <Tag>{item.details.system}</Tag>
-                <span>R$ {priceFormat(item.prices.current)}</span>
+                <span>R$ {parseToBRL(item.prices.current)}</span>
               </div>
               <button type="button" onClick={() => removeItem(item.id)} />
-            </CartItem>
+            </S.CartItem>
           ))}
         </ul>
-        <Quantity>{items.length} Jogos no carrinho</Quantity>
-        <Prices>
-          Total {priceFormat(getTotalPrices())} <span>Em até 6x sem juros</span>
-        </Prices>
+        <S.Quantity>{items.length} Jogos no carrinho</S.Quantity>
+        <S.Prices>
+          Total {parseToBRL(getTotalPrices())} <span>Em até 6x sem juros</span>
+        </S.Prices>
         <Button title="Clique aqui para continuar com a compra" type="button">
           Continuar com a compra
         </Button>
-      </SideBar>
-    </CartContainer>
+      </S.SideBar>
+    </S.CartContainer>
   )
 }
 

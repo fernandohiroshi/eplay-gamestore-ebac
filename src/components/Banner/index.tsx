@@ -1,38 +1,38 @@
 import Tag from '../Tag'
 import Button from '../Button'
 
-import { priceFormat } from '../ProductList'
+import { parseToBRL } from '../../utils'
 import { useGetFeaturedGameQuery } from '../../services/api'
 
-import { BannerBox, Title, Price } from './styles'
+import * as S from './styles'
 
 const Banner = () => {
   const { data: game } = useGetFeaturedGameQuery()
 
   if (!game) {
-    return <h3>Loading...</h3>
+    return <h3>Carregando...</h3>
   }
 
   return (
-    <BannerBox style={{ backgroundImage: `url(${game.media.cover})` }}>
+    <S.BannerBox style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">
-        <Tag size="big">Top Pick Today</Tag>
+        <Tag size="big">Destaque do dia</Tag>
         <div>
-          <Title>{game.name}</Title>
-          <Price>
-            From <span>{priceFormat(game.prices.old)}</span> <br /> for only{' '}
-            {priceFormat(game.prices.current)}
-          </Price>
+          <S.Title>{game.name}</S.Title>
+          <S.Price>
+            De <span>{parseToBRL(game.prices.old)}</span> <br /> Por apenas{' '}
+            {parseToBRL(game.prices.current)}
+          </S.Price>
         </div>
         <Button
           type="link"
           to={`/product/${game.id}`}
-          title="Click to view offer"
+          title="Clique aqui para aproveitar esta oferta"
         >
-          To enjoy
+          Aproveitar
         </Button>
       </div>
-    </BannerBox>
+    </S.BannerBox>
   )
 }
 

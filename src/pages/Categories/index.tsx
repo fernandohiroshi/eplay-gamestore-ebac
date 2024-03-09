@@ -20,33 +20,33 @@ const Categories = () => {
       <>
         <ProductList
           games={actionGames}
-          title="Action"
+          title="Acao"
           background="black"
           id="action"
         />
         <ProductList
           games={sportGames}
-          title="Sport"
+          title="Esportes"
           background="gray"
           id="sport"
         />
         <ProductList
           games={fightGames}
-          title="Fighting"
+          title="Luta"
           background="black"
           id="fight"
         />
         <ProductList games={rpgGames} title="RPG" background="gray" id="rpg" />
         <ProductList
           games={simulationGames}
-          title="Simulation"
+          title="Simulaçao"
           background="black"
           id="simulation"
         />
       </>
     )
   }
-  return <h4>Loading...</h4>
+  return <h4>Carregando...</h4>
 }
 
 export default Categories

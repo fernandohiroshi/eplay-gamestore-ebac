@@ -55,7 +55,7 @@ const Home = () => {
       </>
     )
   }
-  return <h4>Loading...</h4>
+  return <h4>Carregando...</h4>
 }
 
 export default Home

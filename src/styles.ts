@@ -4,8 +4,8 @@ export const colors = {
   white: '#EEE',
   black: '#111',
   gray: '#333',
-  blue: '#483D8B',
-  borderColor: '#aaa'
+  lightGray: '#a3a3a3',
+  purple: '#7E07C5'
 }
 
 export const breakpoints = {

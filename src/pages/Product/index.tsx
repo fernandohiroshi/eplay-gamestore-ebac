@@ -12,16 +12,16 @@ const Product = () => {
   const { data: game } = useGetGameQuery(id!)
 
   if (!game) {
-    return <h3>Loading...</h3>
+    return <h3>Carregando...</h3>
   }
 
   return (
     <>
       <Hero game={game} />
-      <Section title="About the game" background="black">
+      <Section title="Sobre o jogo" background="black">
         <p>{game.description}</p>
       </Section>
-      <Section title="More details." background="gray">
+      <Section title="Mais detalhes" background="gray">
         <p>
           <b>Plataforma:</b> {game.details.system} <br />
           <b>Desenvolvedor:</b> {game.details.developer} <br />

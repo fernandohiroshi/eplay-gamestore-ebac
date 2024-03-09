@@ -44,7 +44,8 @@ export const PayButton = styled.button<PayButtonProps>`
   font-size: 14px;
   font-weight: bold;
   color: ${colors.white};
-  background-color: ${(props) => (props.isactive ? colors.blue : colors.black)};
+  background-color: ${(props) =>
+    props.isactive ? colors.purple : colors.black};
   height: 32px;
   margin-right: 16px;
   padding: 0 8px;

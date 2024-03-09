@@ -1,10 +1,13 @@
-import { priceFormat } from '../ProductList'
-import { add, open } from '../../store/reducers/cart'
 import { useDispatch } from 'react-redux'
-import { Game } from '../../pages/Home'
+
 import Button from '../Button'
 import Tag from '../Tag'
-import { Banner, Infos } from './styles'
+import { parseToBRL } from '../../utils'
+
+import { add, open } from '../../store/reducers/cart'
+import { Game } from '../../pages/Home'
+
+import * as S from './styles'
 
 type Props = {
   game: Game
@@ -19,33 +22,33 @@ const Hero = ({ game }: Props) => {
   }
 
   return (
-    <Banner style={{ backgroundImage: `url(${game.media.cover})` }}>
+    <S.Banner style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">
         <div>
           <Tag>{game.details.category}</Tag>
           <Tag>{game.details.system}</Tag>
         </div>
-        <Infos>
+        <S.Infos>
           <h2>{game.name}</h2>
           <p>
             {game.prices.discount && (
-              <span>De {priceFormat(game.prices.old)}</span>
+              <span>De {parseToBRL(game.prices.old)}</span>
             )}
-            {game.prices.current && <>{priceFormat(game.prices.current)}</>}
+            {game.prices.current && <>{parseToBRL(game.prices.current)}</>}
           </p>
           {game.prices.current && (
             <Button
               type="button"
-              title="Click here to add this game to the cart"
+              title="Clique aqui para adicionar este jogo ao carrinho"
               variant="primary"
               onClick={addToCart}
             >
-              Add to cart
+              Adicionar ao carrinho
             </Button>
           )}
-        </Infos>
+        </S.Infos>
       </div>
-    </Banner>
+    </S.Banner>
   )
 }
 

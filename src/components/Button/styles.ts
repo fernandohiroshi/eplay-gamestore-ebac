@@ -5,10 +5,10 @@ import { Props } from '.'
 
 export const ButtonContainer = styled.button<Props>`
   background-color: ${(props) =>
-    props.variant === 'primary' ? colors.blue : 'transparent'};
+    props.variant === 'primary' ? colors.purple : 'transparent'};
   color: ${colors.white};
   border: 2px solid
-    ${(props) => (props.variant === 'primary' ? colors.blue : colors.white)};
+    ${(props) => (props.variant === 'primary' ? colors.purple : colors.white)};
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
