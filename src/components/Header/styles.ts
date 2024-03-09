@@ -49,6 +49,10 @@ export const HeaderRow = styled.div`
 export const NavMobile = styled.nav`
   display: none;
 
+  a {
+    display: none;
+  }
+
   &.is-open {
     display: block;
   }
