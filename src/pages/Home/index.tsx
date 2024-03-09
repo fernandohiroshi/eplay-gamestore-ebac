@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner'
 import ProductList from '../../components/ProductList'
+
 import { useGetOnSaleQuery, useGetSoonQuery } from '../../services/api'
 
 export interface GalleryItem {
@@ -41,13 +42,13 @@ const Home = () => {
         <Banner />
         <ProductList
           games={onSaleGames}
-          title="Promotions"
+          title="Promoçoes"
           background="gray"
           id="on-sale"
         />
         <ProductList
           games={soonGames}
-          title="Coming Soon"
+          title="Em breve"
           background="black"
           id="coming-soon"
         />
