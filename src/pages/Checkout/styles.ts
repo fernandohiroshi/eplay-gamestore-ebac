@@ -36,6 +36,10 @@ export const InputBox = styled.div<InputBoxProps>`
     padding: 0 8px;
     border: 1px solid ${colors.white};
     width: 100%;
+
+    &.error {
+      border: 1px solid red;
+    }
   }
 `
 export const PayButton = styled.button<PayButtonProps>`
