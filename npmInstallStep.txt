@@ -12,3 +12,5 @@ npm i --save-dev @types/react-router-hash-link
 
 npm i --save yup formik
 
+npm i --save react-spinners
+

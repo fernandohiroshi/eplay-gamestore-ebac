@@ -24,7 +24,7 @@ const Footer = () => (
             </S.Link>
             <S.Link
               title="Clique aqui para acessar jogos de esportes"
-              to="/categories#sport"
+              to="/categories#sports"
             >
               Esportes
             </S.Link>

@@ -52,7 +52,7 @@ const api = createApi({
     getActionGames: builder.query<Game[], void>({
       query: () => 'acao'
     }),
-    getSportGames: builder.query<Game[], void>({
+    getSportsGames: builder.query<Game[], void>({
       query: () => 'esportes'
     }),
     getSimulationGames: builder.query<Game[], void>({
@@ -82,7 +82,7 @@ export const {
   useGetOnSaleQuery,
   useGetSoonQuery,
   useGetActionGamesQuery,
-  useGetSportGamesQuery,
+  useGetSportsGamesQuery,
   useGetSimulationGamesQuery,
   useGetFightGamesQuery,
   useGetRpgGamesQuery,
