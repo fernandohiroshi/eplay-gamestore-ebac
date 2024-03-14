@@ -1,4 +1,3 @@
-import Tag from '../Tag'
 import Loader from '../Loader'
 import Button from '../Button'
 
@@ -17,7 +16,6 @@ const Banner = () => {
   return (
     <S.BannerBox style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">
-        <Tag size="big">Destaque do dia</Tag>
         <div>
           <S.Title>{game.name}</S.Title>
           <S.Price>
