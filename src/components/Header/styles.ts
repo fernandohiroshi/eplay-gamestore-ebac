@@ -29,6 +29,7 @@ export const HeaderBar = styled.header`
 
   h1 {
     line-height: 0;
+    font-size: x-large;
   }
 `
 export const HeaderRow = styled.div`

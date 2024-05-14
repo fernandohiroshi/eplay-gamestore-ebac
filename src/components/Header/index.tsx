@@ -31,7 +31,8 @@ const Header = () => {
           </S.Menu>
           <Link to="/">
             <h1>
-              <img src={logo} alt="EPLAY" />
+              {/* <img src={logo} alt="EPLAY" /> */}
+              EPLAY
             </h1>
           </Link>
           <nav>
@@ -41,7 +42,7 @@ const Header = () => {
                   title="Clique aqui para acessar a pagina de categorias"
                   to="categories"
                 >
-                  Categories
+                  Categorias
                 </Link>
               </S.LinkItem>
               <S.LinkItem>
@@ -57,7 +58,7 @@ const Header = () => {
                   title="Clique aqui para acessar a seçao de promocoes"
                   to="/#on-sale"
                 >
-                  Promoçoes
+                  Promoções
                 </HashLink>
               </S.LinkItem>
             </S.Links>

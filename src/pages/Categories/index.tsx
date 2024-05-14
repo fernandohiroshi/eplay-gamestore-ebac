@@ -23,7 +23,7 @@ const Categories = () => {
     <>
       <ProductList
         games={actionGames}
-        title="Acao"
+        title="Ação"
         background="black"
         id="action"
         isLoading={isLoadingAction}
@@ -51,7 +51,7 @@ const Categories = () => {
       />
       <ProductList
         games={simulationGames}
-        title="Simulaçao"
+        title="Simulação"
         background="black"
         id="simulation"
         isLoading={isLoadingSimulation}

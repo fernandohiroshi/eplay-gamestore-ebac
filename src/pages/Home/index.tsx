@@ -12,7 +12,7 @@ const Home = () => {
       <Banner />
       <ProductList
         games={onSaleGames}
-        title="Promoçoes"
+        title="Promoções"
         background="gray"
         id="on-sale"
         isLoading={isLoadingSale}

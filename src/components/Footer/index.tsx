@@ -6,7 +6,7 @@ const Footer = () => (
   <S.Container>
     <div className="container">
       <S.FooterSection>
-        <S.SectionTitle>Categories</S.SectionTitle>
+        <S.SectionTitle>Categorias</S.SectionTitle>
         <S.Links>
           <li>
             <S.Link
@@ -20,7 +20,7 @@ const Footer = () => (
               title="Clique aqui para acessar jogos de acao"
               to="/categories#action"
             >
-              Acao
+              Ação
             </S.Link>
             <S.Link
               title="Clique aqui para acessar jogos de esportes"
@@ -32,7 +32,7 @@ const Footer = () => (
               title="Clique aqui para acessar jogos de simulaçao"
               to="/categories#simulation"
             >
-              Simulaçao
+              Simulação
             </S.Link>
             <S.Link
               title="Clique aqui para acessar jogos de luta"
@@ -45,14 +45,14 @@ const Footer = () => (
       </S.FooterSection>
 
       <S.FooterSection>
-        <S.SectionTitle>Acesso rapido</S.SectionTitle>
+        <S.SectionTitle>Acesso Rápido</S.SectionTitle>
         <S.Links>
           <li>
             <S.Link
               title="Clique aqui para acessar a seçao de promocoes"
               to="/#on-sale"
             >
-              Promocoes
+              Promoções
             </S.Link>
             <S.Link
               title="Clique aqui para acessar a seçao em breve"

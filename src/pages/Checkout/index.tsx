@@ -202,7 +202,7 @@ const Checkout = () => {
         </Card>
       ) : (
         <form onSubmit={form.handleSubmit}>
-          <Card title="Dados de cobrabça">
+          <Card title="Dados de cobrança">
             <>
               <S.Row>
                 <S.InputBox>

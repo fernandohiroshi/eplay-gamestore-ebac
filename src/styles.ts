@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-  white: '#EEE',
-  black: '#111',
-  gray: '#333',
-  lightGray: '#a3a3a3',
-  purple: '#7E07C5'
+  white: '#F5F1ED',
+  black: '#0a0a0a',
+  gray: '#141414',
+  lightGray: '#1F1F1F',
+  purple: '#731dd8'
 }
 
 export const breakpoints = {
