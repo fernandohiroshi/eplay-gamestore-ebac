@@ -66,4 +66,4 @@ Browserslist
 [Visit the Live Site](https://eplaygame.vercel.app/)
 
 
-[![](https://skillicons.dev/icons?i=html,react,ts,redux,styledcomponents)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=html,ts,react,redux,styledcomponents)](https://skillicons.dev)
